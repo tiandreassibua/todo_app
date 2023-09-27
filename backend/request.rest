@@ -1,0 +1,15 @@
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "andreassibua",
+    "password": "rahasia"
+}
+
+###
+GET http://localhost:5000/api/users/current
+Authorization: ba448535-a509-4cec-8ef3-db695051c724
+
+###
+DELETE http://localhost:5000/api/auth/logout
+Authorization: ba448535-a509-4cec-8ef3-db695051c724
